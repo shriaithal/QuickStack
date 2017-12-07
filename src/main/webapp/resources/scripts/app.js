@@ -256,7 +256,7 @@ app.controller("createProjectsCtrl", [
 			init();
 		} ]);
 
-
+// Author: Shalini Narang
 app.controller("openStackMetricsCtrl", [ '$scope', '$http', '$location', '$routeParams',
 	'$q', '$cookieStore',
 	function($scope, $http, $location, $routeParams, $q, $cookieStore) {
