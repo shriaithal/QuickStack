@@ -3,7 +3,10 @@ package edu.sjsu.openstack.model;
 import org.openstack4j.model.compute.Flavor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
+/**
+	 * 
+	 * @author Anuradha Rajashekar
+	 */
 @Document(collection = "project")
 public class Project {
 
