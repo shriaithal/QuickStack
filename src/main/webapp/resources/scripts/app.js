@@ -256,7 +256,7 @@ app.controller("createProjectsCtrl", [
 			init();
 		} ]);
 
-
+//Added by Shalini Narang to fetch open stack metrics and display in UI
 app.controller("openStackMetricsCtrl", [ '$scope', '$http', '$location', '$routeParams',
 	'$q', '$cookieStore',
 	function($scope, $http, $location, $routeParams, $q, $cookieStore) {
