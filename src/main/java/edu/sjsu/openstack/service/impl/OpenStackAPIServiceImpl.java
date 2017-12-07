@@ -399,7 +399,12 @@ public class OpenStackAPIServiceImpl implements OpenStackAPIService {
 
 		vmMetadataDao.insert(vmMetadata);
 	}
-
+	
+        /**
+	 * Start Server
+	 * 
+	 * @author Shalini Narang
+	 */
 	@Override
 	public void startServer(String serverName) {
 		String id = getServerId(serverName);
@@ -408,7 +413,12 @@ public class OpenStackAPIServiceImpl implements OpenStackAPIService {
 		vmMetadata.setStartTime(System.currentTimeMillis());
 		vmMetadataDao.updateVMMetadata(vmMetadata);
 	}
-
+        
+	/**
+	 * Stop Server
+	 * 
+	 * @author Shalini Narang
+	 */
 	@Override
 	public void stopServer(String serverName) {
 		String id = getServerId(serverName);
@@ -426,7 +436,12 @@ public class OpenStackAPIServiceImpl implements OpenStackAPIService {
 		vmMetadataDao.updateVMMetadata(vmMetadata);
 
 	}
-
+	
+        /**
+	 * Delete Server
+	 * 
+	 * @author Ravali Nagabandi
+	 */
 	@Override
 	public void deleteServer(String projectId, String userName) {
 		List<VMMetadata> vmMetadataList = vmMetadataDao.getVMMetadata(projectId, userName);
@@ -562,7 +577,12 @@ public class OpenStackAPIServiceImpl implements OpenStackAPIService {
 		}
 		return flavor;
 	}
-
+        
+	/**
+	 * Generate Bill
+	 * 
+	 * @author Ravali Nagabandi
+	 */
 	@Override
 	public Integer generateBill(String projectId, String userName) {
 		List<VMMetadata> vmMetadataList = vmMetadataDao.getVMMetadata(projectId, userName);
@@ -787,7 +807,12 @@ public class OpenStackAPIServiceImpl implements OpenStackAPIService {
 		}
 		return response;
 	}
-
+	
+	/**
+	 * Create Server
+	 * 
+	 * @author Shalini Narang
+	 */
 	@Override
 	public void createServer(String projectId, String userName) {
 		Project project = projectDao.getProjectById(projectId);
