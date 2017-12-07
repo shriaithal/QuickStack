@@ -65,6 +65,11 @@ public class OpenStackAPIController {
 		}
 		return responseEntity;
 	}
+	
+	/**
+	 * 
+	 * @author Ashwini Shankar Narayan
+	 */
 
 	@RequestMapping(value = "/compute/diagnostics/cli", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
