@@ -169,35 +169,55 @@ public class OpenStackAPIController {
 		}
 		return responseEntity;
 	}
-
+	
+        /**
+	 * 
+	 * @author Shalini Narang
+	 */
 	@RequestMapping(value = "/compute/createServer/project", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
 	public ResponseEntity createServerFromProject(@RequestBody CreateServerProjectRequest request) {
 		apiService.createServer(request.getProjectId(), request.getUserName());
 		return new ResponseEntity(HttpStatus.OK);
 	}
-
+	
+        /**
+	 * 
+	 * @author Shalini Narang
+	 */
 	@RequestMapping(value = "/compute/startServer", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
 	public ResponseEntity startServer(@RequestParam String serverName) {
 		apiService.startServer(serverName);
 		return new ResponseEntity(HttpStatus.OK);
 	}
-
+        
+	/**
+	 * 
+	 * @author Shalini Narang
+	 */
 	@RequestMapping(value = "/compute/stopServer", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
 	public ResponseEntity stopServer(@RequestParam String serverName) {
 		apiService.stopServer(serverName);
 		return new ResponseEntity(HttpStatus.OK);
 	}
-
+	
+	/**
+	 * 
+	 * @author Ravali Nagabandi
+	 */
 	@RequestMapping(value = "/compute/deleteServer", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
 	public ResponseEntity deleteServer(@RequestParam String projectId, String userName) {
 		apiService.deleteServer(projectId, userName);
 		return new ResponseEntity(HttpStatus.OK);
 	}
-
+	
+        /**
+	 * 
+	 * @author Ravali Nagabandi
+	 */
 	@RequestMapping(value = "/generate/bill", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
 	public ResponseEntity<Integer> generateBill(@RequestParam String projectId, String userName) {
