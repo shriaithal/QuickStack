@@ -236,7 +236,10 @@ public class OpenStackAPIServiceImpl implements OpenStackAPIService {
 		vmMetadataDao.updateVMMetadata(metadata);
 		return imageId;
 	}
-
+        /**
+	 * 
+	 * @author Ashwini Shankar Narayan
+	 */
 	@Override
 	public OpenStackMetrics getDiagnosticsFromCLI() {
 		OpenStackMetrics response = new OpenStackMetrics();
