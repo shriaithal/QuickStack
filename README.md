@@ -23,3 +23,7 @@ b.	AngularJS is used to route across pages also, to invoke the backend REST APIs
 a.	Maven is used as the build tool and all the dependencies are provided in pom.xml.
 7.  Web Server: Apache Tomcat 8.5
 a.	Apache Tomcat is used to run the Quick Stack application on local host.
+
+### Arhitecture Overview
+
+![Architecture Overview](https://user-images.githubusercontent.com/1582196/34173305-ddcda942-e4a9-11e7-9455-f91e900094a2.png)
