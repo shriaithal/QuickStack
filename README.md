@@ -1,5 +1,8 @@
 # Quick Stack
 
+## Demo
+- [Quick Stack Demo](https://www.youtube.com/watch?v=5Jl1A1u8UtI)
+
 ### Introduction
 Quick Stack is a new innovative online learning portal. It provides theoretical details about a topic and a set of instructions which can be executed by the user on a real, live environment. The environment can be as simple as consisting of one Linux server or can be as complex as consisting of multiple servers comprising of a database instance and a web server. As the user progresses in the lab assignment, he can take a backup of the environment and restore the backup if something goes wrong during his lab. The user can switch off their environments when they are not using it. At the end, the user is presented a bill, which is as per usage.
 Quick Stack is developed on Open Stack which is a cloud operating system. It is an open source platform which aims to create abstracted pools of compute, storage, and networking resources that can be used to create virtual machines on top of standard server hardware.
